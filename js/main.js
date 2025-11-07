@@ -39,25 +39,38 @@ $(window).on('load', function() {
 	/* -----------------------------------
 			  2. Sound Setup
 	----------------------------------- */
-	$('body').append('<audio loop autoplay volume="0" id="audio-player"><source src="music.mp3" type="audio/mpeg"></audio>');
-    	var audio = document.getElementById("audio-player");
-    	audio.volume = 0.2;
+	var $musicToggle = $('.music-bg');
+	var audioElement = null;
 	
-	if($(window).length) {
-		$('.music-bg').css({'visibility':'visible'});
-		$('body').addClass("audio-on");
-		if ($('body').hasClass('audio-off')) {
-        	$('body').removeClass('audio-on');
-		} 
-		$(".music-bg").on('click', function() {
-			$('body').toggleClass("audio-on audio-off");         
+	if ($musicToggle.length) {
+		var audioSrc = $musicToggle.data('audio');
+		
+		if (audioSrc) {
+			$('body').append('<audio loop autoplay id="audio-player"><source src="' + audioSrc + '" type="audio/mpeg"></audio>');
+			audioElement = document.getElementById("audio-player");
+		}
+		
+		if (audioElement) {
+			audioElement.volume = 0.2;
+			$musicToggle.css({'visibility':'visible'});
+			$('body').addClass("audio-on");
 			if ($('body').hasClass('audio-off')) {
-				audio.pause();
-			} 
-			if ($('body').hasClass('audio-on')) {
-				audio.play();
+				$('body').removeClass('audio-on');
 			}
-		});
+			$musicToggle.on('click', function(event) {
+				event.preventDefault();
+				$('body').toggleClass("audio-on audio-off");
+				if ($('body').hasClass('audio-off')) {
+					audioElement.pause();
+				}
+				if ($('body').hasClass('audio-on')) {
+					audioElement.play();
+				}
+			});
+		} else {
+			$musicToggle.addClass('is-disabled').attr({'aria-hidden': 'true', 'tabindex': '-1'}).css({'visibility':'hidden'});
+			$('body').removeClass('audio-on').addClass('audio-off');
+		}
 	}
 	
 	/* -----------------------------------
@@ -95,7 +108,9 @@ $(window).on('load', function() {
 	/* -----------------------------------
 	      	5. YouTube Video
 	----------------------------------- */
-	$("#play-video").YTPlayer();
+	if ($.fn.YTPlayer && $("#play-video").length) {
+		$("#play-video").YTPlayer();
+	}
 	
 });
 
@@ -256,9 +271,14 @@ $(document).ready(function() {
 	});
 	
 	/* Google Map Setup */
-    if($('#map').length) {
-        initMap();
-     };
+	var $mapElement = $('#map');
+    if($mapElement.length) {
+        if (window.google && google.maps) {
+            initMap();
+        } else {
+            console.warn('Google Maps JavaScript API not available.');
+        }
+     }
 
 });
 
