@@ -1,1168 +1,611 @@
 <!DOCTYPE html>
-<html lang="en">
-    
+<html lang="es">
 <head>
-		
-		<!-- Meta -->
-        <meta charset="UTF-8">
-        <meta name="keywords" content=" lcjesusi, jesus israel lima canaza,lc jesus">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-		
-		<!-- Title -->
-		<title>Personal Jesus Israel</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta name="description" content="Página personal de Jesús Israel Lima Canaza, LCJesusI. Estudiante de Ingeniería de Sistemas, Construcción Civil y Contaduría General." />
+  <meta name="keywords" content="LCJesusI, LCJI, Jesus Israel Lima Canaza, Ingeniería de Sistemas, Construcción Civil, Contaduría General, Calama Chile" />
+  <meta name="author" content="Jesús Israel Lima Canaza" />
+  <title>LCJesusI | Jesús Israel Lima Canaza</title>
 
-		<!-- CSS Plugins -->
-        <link rel="stylesheet" href="css/plugins/bootstrap.min.css">
-        <link rel="stylesheet" href="css/plugins/font-awesome.css">
-		<link rel="stylesheet" href="css/plugins/magnific-popup.css">
-		<link rel="stylesheet" href="css/plugins/simplebar.css">
-		<link rel="stylesheet" href="css/plugins/owl.carousel.min.css">
-		<link rel="stylesheet" href="css/plugins/owl.theme.default.min.css">
-		<link rel="stylesheet" href="css/plugins/jquery.animatedheadline.css">
-		
-		<!-- CSS Base -->
-        <link rel="stylesheet" class="back-color" href="css/style-dark.css">
-		<link rel="stylesheet" href="css/style-demo.css">
-		
-		<!-- Settings Style -->
-		<link rel="stylesheet" class="posit-nav" href="css/settings/left-nav.css" />
-		<link rel="stylesheet" class="theme-color" href="css/settings/green-color.css" />
-		
-    </head>
-    <body>
-		
-		<!--Theme Options Start-->
-        <div class="style-options">
-            <div class="toggle-btn">
-                <span><i class="fas fa-cog"></i></span>
-            </div>
-            <div class="style-menu">
-                <div class="style-nav">
-                    <h4 class="mt-15 mb-10">Menu Position</h4>
-                    <ul>
-						<li><a href="css/settings/top-nav.css"><i class="fas fa-caret-up"></i> Top</a></li>
-                        <li><a href="css/settings/left-nav.css"><i class="fas fa-caret-left"></i> Left</a></li>
-                        <li><a href="css/settings/right-nav.css"><i class="fas fa-caret-right"></i> Right</a></li>
-                        <li><a href="css/settings/bottom-nav.css"><i class="fas fa-caret-down"></i> Bottom</a></li>
-                    </ul>
-                </div>
-				<div class="style-back">
-                    <h4 class="mt-85 mb-10">Style Color</h4>
-                    <ul>
-                        <li><a href="css/style-dark.css"><i class="fas fa-moon"></i> Dark</a></li>
-                        <li><a href="css/style-light.css"><i class="far fa-lightbulb"></i> Light</a></li>
-                    </ul>
-                </div>
-				<div class="style-color">
-                    <h4 class="mt-55 mb-10">Theme Color</h4>
-                    <ul>
-                        <li><a href="css/settings/green-color.css" style="background-color: #25ca7f;"></a></li>
-						<li><a href="css/settings/blue-color.css" style="background-color: #00a3e1;"></a></li>
-                        <li><a href="css/settings/red-color.css" style="background-color: #d94c48;"></a></li>
-                        <li><a href="css/settings/purple-color.css" style="background-color: #bb68c8;"></a></li>
-						<li><a href="css/settings/sea-color.css" style="background-color: #0dcdbd;"></a></li>
-                        <li><a href="css/settings/yellow-color.css" style="background-color: #eae328;"></a></li>
-                    </ul>
-                </div>
-            </div>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/plugins/font-awesome.css" />
+
+  <style>
+    :root {
+      --bg: #07111f;
+      --bg-2: #0d1728;
+      --card: rgba(255, 255, 255, 0.07);
+      --card-strong: rgba(255, 255, 255, 0.12);
+      --text: #f8fafc;
+      --muted: #a8b3c7;
+      --primary: #22c55e;
+      --secondary: #38bdf8;
+      --accent: #facc15;
+      --danger: #fb7185;
+      --border: rgba(255, 255, 255, 0.12);
+      --shadow: 0 24px 80px rgba(0, 0, 0, 0.35);
+      --radius: 26px;
+    }
+
+    * { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background:
+        radial-gradient(circle at 12% 18%, rgba(34, 197, 94, 0.25), transparent 30%),
+        radial-gradient(circle at 85% 10%, rgba(56, 189, 248, 0.24), transparent 32%),
+        radial-gradient(circle at 70% 85%, rgba(250, 204, 21, 0.14), transparent 28%),
+        linear-gradient(145deg, var(--bg), #020617 65%);
+      color: var(--text);
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+
+    a { color: inherit; text-decoration: none; }
+
+    img { max-width: 100%; display: block; }
+
+    .container {
+      width: min(1120px, calc(100% - 32px));
+      margin: 0 auto;
+    }
+
+    .nav {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      backdrop-filter: blur(18px);
+      background: rgba(2, 6, 23, 0.72);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .nav-inner {
+      min-height: 76px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-weight: 900;
+      letter-spacing: -0.04em;
+    }
+
+    .brand img {
+      width: 46px;
+      height: 46px;
+      object-fit: contain;
+      border-radius: 14px;
+      background: rgba(255, 255, 255, 0.08);
+      padding: 5px;
+    }
+
+    .brand span { color: var(--primary); }
+
+    .nav-links {
+      display: flex;
+      gap: 18px;
+      color: var(--muted);
+      font-weight: 700;
+      font-size: 14px;
+    }
+
+    .nav-links a:hover { color: var(--text); }
+
+    .hero {
+      padding: 84px 0 70px;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      gap: 42px;
+      align-items: center;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 9px 13px;
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.06);
+      color: var(--muted);
+      font-size: 14px;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+
+    .dot {
+      width: 9px;
+      height: 9px;
+      background: var(--primary);
+      border-radius: 50%;
+      box-shadow: 0 0 18px var(--primary);
+    }
+
+    h1 {
+      font-size: clamp(42px, 8vw, 82px);
+      line-height: 0.94;
+      margin: 0 0 22px;
+      letter-spacing: -0.08em;
+    }
+
+    .gradient-text {
+      background: linear-gradient(90deg, var(--primary), var(--secondary), var(--accent));
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+
+    .hero p {
+      color: var(--muted);
+      font-size: 18px;
+      line-height: 1.8;
+      margin: 0 0 30px;
+      max-width: 680px;
+    }
+
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      margin-bottom: 34px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      padding: 14px 20px;
+      border-radius: 16px;
+      font-weight: 800;
+      border: 1px solid var(--border);
+      transition: transform .2s ease, border-color .2s ease, background .2s ease;
+    }
+
+    .btn:hover { transform: translateY(-2px); }
+
+    .btn-primary {
+      background: linear-gradient(135deg, var(--primary), #16a34a);
+      color: #04110a;
+      border-color: transparent;
+      box-shadow: 0 16px 40px rgba(34, 197, 94, 0.22);
+    }
+
+    .btn-ghost { background: rgba(255,255,255,0.07); }
+
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 14px;
+    }
+
+    .stat, .card {
+      border: 1px solid var(--border);
+      background: var(--card);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+    }
+
+    .stat { padding: 18px; }
+    .stat strong { display: block; font-size: 24px; }
+    .stat span { color: var(--muted); font-size: 13px; font-weight: 700; }
+
+    .profile-card {
+      position: relative;
+      padding: 22px;
+      overflow: hidden;
+    }
+
+    .profile-card::before {
+      content: "";
+      position: absolute;
+      inset: -80px -60px auto auto;
+      width: 180px;
+      height: 180px;
+      background: radial-gradient(circle, rgba(34,197,94,.42), transparent 68%);
+    }
+
+    .profile-photo {
+      position: relative;
+      aspect-ratio: 1 / 1.08;
+      border-radius: 28px;
+      overflow: hidden;
+      background: linear-gradient(135deg, rgba(34,197,94,.2), rgba(56,189,248,.15));
+      border: 1px solid var(--border);
+    }
+
+    .profile-photo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .profile-info { padding: 20px 4px 4px; }
+    .profile-info h2 { margin: 0 0 8px; font-size: 28px; letter-spacing: -0.04em; }
+    .profile-info p { margin: 0; color: var(--muted); line-height: 1.7; }
+
+    section { padding: 70px 0; }
+
+    .section-head {
+      display: flex;
+      align-items: end;
+      justify-content: space-between;
+      gap: 24px;
+      margin-bottom: 28px;
+    }
+
+    .section-head h2 {
+      margin: 0;
+      font-size: clamp(30px, 5vw, 48px);
+      letter-spacing: -0.06em;
+    }
+
+    .section-head p {
+      margin: 0;
+      color: var(--muted);
+      max-width: 540px;
+      line-height: 1.7;
+    }
+
+    .grid-3 {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 18px;
+    }
+
+    .grid-2 {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 18px;
+    }
+
+    .card { padding: 24px; }
+    .card i { color: var(--primary); font-size: 28px; margin-bottom: 18px; }
+    .card h3 { margin: 0 0 10px; font-size: 22px; letter-spacing: -0.04em; }
+    .card p { color: var(--muted); line-height: 1.75; margin: 0; }
+
+    .tag-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 18px;
+    }
+
+    .tag {
+      padding: 9px 12px;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid var(--border);
+      color: var(--muted);
+      font-size: 13px;
+      font-weight: 800;
+    }
+
+    .project {
+      min-height: 250px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      background: linear-gradient(145deg, rgba(255,255,255,.09), rgba(255,255,255,.04));
+    }
+
+    .project-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 26px;
+    }
+
+    .project-number {
+      width: 48px;
+      height: 48px;
+      border-radius: 16px;
+      display: grid;
+      place-items: center;
+      background: rgba(34, 197, 94, 0.14);
+      color: var(--primary);
+      font-weight: 900;
+    }
+
+    .timeline {
+      display: grid;
+      gap: 16px;
+    }
+
+    .timeline-item {
+      display: grid;
+      grid-template-columns: 170px 1fr;
+      gap: 18px;
+      padding: 22px;
+      border: 1px solid var(--border);
+      background: var(--card);
+      border-radius: 22px;
+    }
+
+    .timeline-item strong { color: var(--primary); }
+    .timeline-item h3 { margin: 0 0 8px; }
+    .timeline-item p { color: var(--muted); margin: 0; line-height: 1.7; }
+
+    .contact-card {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 18px;
+      align-items: stretch;
+    }
+
+    .contact-panel {
+      padding: 32px;
+      border-radius: var(--radius);
+      border: 1px solid var(--border);
+      background: linear-gradient(135deg, rgba(34,197,94,.16), rgba(56,189,248,.09));
+      box-shadow: var(--shadow);
+    }
+
+    .contact-panel h2 { margin: 0 0 14px; font-size: 36px; letter-spacing: -0.05em; }
+    .contact-panel p { color: var(--muted); line-height: 1.75; }
+
+    .socials {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 22px;
+    }
+
+    .socials a {
+      width: 46px;
+      height: 46px;
+      display: grid;
+      place-items: center;
+      border-radius: 15px;
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid var(--border);
+      color: var(--text);
+    }
+
+    .contact-list { display: grid; gap: 14px; }
+    .contact-item { padding: 18px; }
+    .contact-item small { display: block; color: var(--muted); font-weight: 800; margin-bottom: 6px; }
+    .contact-item strong { word-break: break-word; }
+
+    footer {
+      padding: 34px 0;
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+      text-align: center;
+    }
+
+    @media (max-width: 880px) {
+      .hero-grid, .grid-3, .grid-2, .contact-card { grid-template-columns: 1fr; }
+      .section-head { align-items: start; flex-direction: column; }
+      .nav-links { display: none; }
+      .stats { grid-template-columns: 1fr; }
+      .timeline-item { grid-template-columns: 1fr; }
+      .hero { padding-top: 56px; }
+    }
+  </style>
+</head>
+<body>
+  <header class="nav">
+    <div class="container nav-inner">
+      <a href="#inicio" class="brand" aria-label="Inicio LCJesusI">
+        <img src="img/logo.png" alt="Logo LCJesusI" />
+        <div>LC<span>JesusI</span></div>
+      </a>
+      <nav class="nav-links" aria-label="Navegación principal">
+        <a href="#sobre-mi">Sobre mí</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#proyectos">Proyectos</a>
+        <a href="#formacion">Formación</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="inicio">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <div class="eyebrow"><span class="dot"></span> Marca personal / Tecnología / Gestión</div>
+          <h1>Jesús Israel <span class="gradient-text">Lima Canaza</span></h1>
+          <p>
+            Soy LCJesusI: estudiante de Ingeniería de Sistemas, Construcción Civil y Contaduría General. Me enfoco en crear soluciones digitales, sistemas para negocios y proyectos con estructura, precisión y visión práctica.
+          </p>
+          <div class="actions">
+            <a class="btn btn-primary" href="#proyectos"><i class="fas fa-briefcase"></i> Ver proyectos</a>
+            <a class="btn btn-ghost" href="mailto:jesus.israel.lima.canaza@gmail.com"><i class="fas fa-paper-plane"></i> Contactarme</a>
+          </div>
+          <div class="stats">
+            <div class="stat"><strong>LCJI</strong><span>Código · Estructura · Precisión</span></div>
+            <div class="stat"><strong>2026</strong><span>Perfil actualizado</span></div>
+            <div class="stat"><strong>Calama</strong><span>Chile</span></div>
+          </div>
         </div>
-		
-		<!-- Preloader -->
-		<div id="preloader">
-  			<div class="loading-area">
-    			<div class="circle"></div>
-  			</div>
-  			<div class="left-side"></div>
-  			<div class="right-side"></div>
-		</div>
-		
-		<!-- Main Site -->
-		<div id="home">
-  		<div id="about">
-    	<div id="resume">
-     	<div id="portfolio">
-        <div id="blog">
-		<div id="contact">
-			
-			<div class="header-mobile">
-                <a class="header-toggle"><i class="fas fa-bars"></i></a>
-                <h2>LC JESUS I ♥</h2>
-            </div>
-			
-			<!-- Left Block -->
-			<nav class="header-main" data-simplebar>
-		
-				<!-- Logo -->
-				<div class="logo">
-            		<img src="img/logo.png" alt="">
-            	</div>
-				
-          		<ul>
-					<li data-tooltip="home" data-position="top">
-            			<a href="#home" class="icon-h fas fa-house-damage"></a>
-					</li>
-					<li data-tooltip="about" data-position="top">
-            			<a href="#about" class="icon-a fas fa-user-tie"></a>
-					</li>
-					<li data-tooltip="resume" data-position="top">
-            			<a href="#resume" class="icon-r fas fa-address-book"></a>
-					</li>
-					<li data-tooltip="portfolio" data-position="top">
-            			<a href="#portfolio" class="icon-p fas fa-briefcase"></a>
-					</li>
-					<li data-tooltip="blog" data-position="top">
-            			<a href="#blog" class="icon-b fas fa-receipt"></a>
-					</li>
-					<li data-tooltip="contact" data-position="bottom">
-						<a href="#contact" class="icon-c fas fa-envelope"></a>
-					</li>
-          		</ul>
-				
-				<!-- Sound wave -->
-    			<a href="#"  class="music-bg">
-      				<div class="lines">
-        				<span></span>
-        				<span></span>
-        				<span></span>
-        				<span></span>
-						<span></span>
-						<span></span>
-      				</div>
-					<p> Sound </p>
-    			</a>
-			 </nav>
-			
-			<!-- Home Section -->
-          	<div class="pt-home" style="background-image: url('img/home-bg.jpg')">
-             	<section>
-					
-					<!-- Banner -->
-					<div class="banner">
-  						<h1>Jesus Israel</h1>
-						<p class="cd-headline rotate-1">
-							<span>Soy un</span>
-							<span class="cd-words-wrapper">
-								<b class="is-visible">Developer</b>
-								<b>Photographer</b>
-								<b>Designer</b>
-								<b>Freelancer</b>
-							</span>
-						</p>
-					</div>
-					
-					<!-- Language -->
-					<!--<div class="lang">
-                		<ul>
-                   			<li><a href="#" class="active">eng</a></li>
-                    		<li><a href="#">rus</a></li>
-                		</ul>
-            		</div>-->
-		
-					<!-- Social -->
-					<div class="social">
-            			<ul>
-                			<li><a href="https://www.facebook.com/LCJesusI/"><i class="fab fa-facebook-f"></i></a></li>
-                			<li><a href="https://twitter.com/LCJesusI"><i class="fab fa-twitter"></i></a></li>
-                			<li><a href="https://www.instagram.com/jesus_israel_lima_canaza/"><i class="fab fa-instagram"></i></a></li>
-							<li><a href="https://www.youtube.com/channel/UC-BhTLr0fHaMwrSYODL6h_Q"><i class="fab fa-youtube"></i></a></li>
-            			</ul>
-        			</div>
-			  	</section>  
-          	</div>
-			
-			<!-- About Section -->
-			<div class="page pt-about" data-simplebar>
-				<section class="container">
-					
-					<!-- Section Title -->
-					<div class="header-page mt-70 mob-mt">
-						<h2>About Me</h2>
-						<span></span>
-					</div>
-				
-					<!-- Personal Info Start -->
-					<div class="row mt-100">
-					
-						<!-- Information Block -->
-						<div class="col-lg-12 col-sm-12">
-    						<div class="info box">
-								<div class="row">
-									<div class="col-lg-3 col-sm-4">
-										<div class="photo">
-											<img alt="jesus israel lima canaza" src="img/jesus.jpg">		
-										</div>	
-									</div>
-									<div class="col-lg-9 col-sm-8">
-										<h4>Jesus Israel Lima Canaza</h4>
-										<div class="loc">
-											<i class="fas fa-map-marked-alt"></i> Sucre, Bolivia
-										</div>
-                                        <p>¡Hola! Soy Jesus Israel, un diseñador y desarrollador digital autodidacta. Empecé en la habitación, me convertí en profesional en la universidad <b>USFX</b>. Ahora vivo en BOLIVIA, Sucre, disfruto de la vida en el campo.
-										</p>
-										<p> Tengo un par de aficiones pero me gusta viajar. Ya he recorrido casi todos los departamentos de nuestro país. Me gusta la fruta.
-										</p>
-									</div>
-									
-									<!-- Icon Info -->
-									<div class="col-lg-3 col-sm-4">
-                                		<div class="info-icon">
-                                     		<i class="fas fa-award"></i>
-                                     		<div class="desc-icon">
-												<h6>Iniciando</h6>
-                                            	<p>EXPERIENCIA</p>
-                                       		</div>
-                                		</div>
-                                	</div>
-									
-									<!-- Icon Info -->
-									<div class="col-lg-3 col-sm-4">
-                                		<div class="info-icon">
-                                     		<i class="fas fa-certificate"></i>
-                                     		<div class="desc-icon">
-												<h6>10+ Proyectos</h6>
-                                            	<p>COMPLETADOS</p>
-                                      		</div>
-                                		</div>
-                                	</div>
-									
-									<!-- Icon Info -->
-									<div class="col-lg-3 col-sm-4">
-                                		<div class="info-icon">
-                                     		<i class="fas fa-user-astronaut"></i>
-                                     		<div class="desc-icon">
-												<h6>Freelance</h6>
-                                           		<p>DISPONIBLE</p>
-                                        	</div>
-                                		</div>
-                                	</div>
-									<div class="col-lg-3 col-sm-12 pt-50">
-                                		<a href="#" class="btn-st">Descargar CV</a>
-                                	</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					
-					<!-- Interests Row Start -->
-					<div class="row mt-100">
-					
-						<!-- Header Block -->
-						<div class="col-md-12">
-							<div class="header-box mb-50">
-								<h3>My Interests</h3>
-							</div>
-						</div>
-					
-						<div class="col-lg-12 col-sm-12">
-							<div class="box">
-								<div class="row">
-									<!-- Interests Item -->
-									<div class="col-lg-3 col-sm-6">
-										<div class="inter-icon">
-                                     		<i class="fas fa-music"></i>
-                                    	 	<div class="desc-inter">
-												<h6>Music</h6>
-                               	        	</div>
-										</div>
-									</div>
-								
-									<!-- Interests Item -->
-									<div class="col-lg-3 col-sm-6">
-										<div class="inter-icon">
-                                     		<i class="fas fa-route"></i>
-                                     		<div class="desc-inter">
-												<h6>Travelling</h6>
-                                       		</div>
-                                		</div>
-									</div>
-								
-									<!-- Interests Item -->
-									<div class="col-lg-3 col-sm-6">
-										<div class="inter-icon">
-                                 	    	<i class="far fa-image"></i>
-                                  		   	<div class="desc-inter">
-												<h6>Photos</h6>
-                                  	     	</div>
-                                		</div>
-									</div>
-								
-									<!-- Interests Item -->
-									<div class="col-lg-3 col-sm-6">
-										<div class="inter-icon">
-                                    	 	<i class="fas fa-film"></i>
-                                     		<div class="desc-inter">
-												<h6>Movies</h6>
-                                   	    	</div>
-                                		</div>
-									</div>
-								
-									<!-- Interests Item -->
-									<div class="col-lg-3 col-sm-6">
-										<div class="inter-icon">
-                                 	    	<i class="fas fa-space-shuttle"></i>
-                                 	    	<div class="desc-inter">
-												<h6>Space</h6>
-                                	       	</div>
-                                		</div>
-									</div>
-								
-									<!-- Interests Item -->
-									<div class="col-lg-3 col-sm-6">
-										<div class="inter-icon">
-                                    	 	<i class="fas fa-book"></i>
-                                     		<div class="desc-inter">
-												<h6>Books</h6>
-                                    	   	</div>
-                                		</div>
-									</div>
-								
-									<!-- Interests Item -->
-									<div class="col-lg-3 col-sm-6">
-										<div class="inter-icon">
-        	                             	<i class="fas fa-gamepad"></i>
-            	                         	<div class="desc-inter">
-												<h6>Video games</h6>
-                    	                   	</div>
-                        	        	</div>
-									</div>
-								
-									<!-- Interests Item -->
-									<div class="col-lg-3 col-sm-6">
-										<div class="inter-icon">
-        	                             	<i class="fas fa-tree"></i>
-            	                         	<div class="desc-inter">
-												<h6>Forest</h6>
-                    	                   	</div>
-                        	        	</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				
-					<!-- Service Row Start -->
-					<div class="row mt-100">
-					
-						<!-- Header Block -->
-						<div class="col-md-12">
-							<div class="header-box mb-50">
-								<h3>Services</h3>
-							</div>
-						</div>
-					
-						<!-- Service Item -->
-						<div class="col-lg-6 col-sm-6">
-							<div class="service box mb-40">
-								<i class="fas fa-desktop"></i>
-								<h4>Web Design</h4>
-								<p>Diseño de paginas web personales y de empresas.</p>
-							</div>
-						</div>
 
-						<!-- Service Item -->
-						<div class="col-lg-6 col-sm-6">
-							<div class="service box mb-40">
-								<i class="fas fa-cogs"></i>
-								<h4>Web Development</h4>
-								<p>Desarrolo de paginas web personales y empresas.</p>
-							</div>
-						</div>
+        <article class="card profile-card">
+          <div class="profile-photo">
+            <img src="img/jesus.jpg" alt="Fotografía de Jesús Israel Lima Canaza" />
+          </div>
+          <div class="profile-info">
+            <h2>LCJesusI</h2>
+            <p>Perfil multidisciplinario orientado a programación, administración, construcción y negocios reales.</p>
+          </div>
+        </article>
+      </div>
+    </section>
 
-						<!-- Service Item -->
-						<div class="col-lg-6 col-sm-6">
-							<div class="service box mb-40">
-								<i class="fas fa-mobile-alt"></i>
-								<h4>Responsive Design</h4>
-								<p>El diseño es tanto como para Pc, Tablet y Celulares.</p>
-							</div>
-						</div>
-
-						<!-- Service Item -->
-						<div class="col-lg-6 col-sm-6">
-							<div class="service box mb-40">
-								<i class="fas fa-medkit"></i>
-								<h4>quick Support</h4>
-								<p>Se ofrece un soporte 24/7 los 365 dias del año.</p>
-							</div>
-						</div>
-					</div>
-				
-					<!-- Testimonial Row Start -->
-					<div class="row testimonial mt-60">
-					
-						<!-- Header Block -->
-						<div class="col-md-12">
-							<div class="header-box mb-50">
-								<h3>Testimonials</h3>
-							</div>
-						</div>
-						
-						<div class="owl-carousel owl-theme">
-	
-							<!-- Testimonail Item -->
-							<div class="testimonial-item">
-								<div class="media">
-									<img src="img/testimonials/testimonial-1.jpg" alt="">
-									<div class="content">
-										<h4>John Doe</h4>
-										<p>Web Development</p>
-									</div>
-									<ul class="rating">
-										<li><i class="far fa-star"></i></li>
-										<li><i class="far fa-star"></i></li>
-										<li><i class="far fa-star"></i></li>
-										<li><i class="far fa-star"></i></li>
-										<li><i class="far fa-star"></i></li>
-                                 	</ul>
-								</div>
-								<div class="comment pt-30">
-									<p>
-										Vayas a donde vayas, ve con todo tu corazón. – Confucio.
-									</p>
-								</div>
-							</div>
-
-							<!-- Testimonail Item -->
-							<div class="testimonial-item">
-								<div class="media">
-									<img src="img/testimonials/testimonial-2.jpg" alt="">
-									<div class="content">
-										<h4>Alex Doe</h4>
-										<p>UI/UX Designer</p>
-									</div>
-									<ul class="rating">
-										<li><i class="far fa-star"></i></li>
-										<li><i class="far fa-star"></i></li>
-										<li><i class="far fa-star"></i></li>
-										<li><i class="far fa-star"></i></li>
-										<li><i class="far fa-star-half"></i></li>
-                                 	</ul>
-								</div>
-								<div class="comment pt-30">
-									<p>
-										Los dos días más importantes de tu vida son el dí­a en que naciste y el día en el que encontraste el por qué. – Mark Twain.
-									</p>
-								</div>
-							</div>
-						
-							<!-- Testimonail Item -->
-							<div class="testimonial-item">
-								<div class="media">
-									<img src="img/testimonials/testimonial-3.jpg" alt="">
-									<div class="content">
-										<h4>David Doe</h4>
-										<p>UI/UX Designer</p>
-									</div>
-									<ul class="rating">
-										<li><i class="far fa-star"></i></li>
-										<li><i class="far fa-star"></i></li>
-										<li><i class="far fa-star"></i></li>
-										<li><i class="far fa-star"></i></li>
-                                 	</ul>
-								</div>
-								<div class="comment pt-30">
-									<p>
-										En 20 años desde hoy estarás más decepcionado de las cosas que no hiciste que de las que hiciste. – Mark Twain.
-									</p>
-								</div>
-							</div>
-						</div>
-					</div>
-				
-					<!-- Price Row Start -->
-					<div class="row mt-100 mb-60">
-						
-						<!-- Header Block -->
-						<div class="col-md-12">
-							<div class="header-box mb-90">
-								<h3>Price</h3>
-							</div>
-						</div>
-					
-						<!-- Price Item -->
-						<div class="col-lg-4 col-sm-12">
-							<div class="price box">
-								<div class="head-price">
-									<i class="fa fa-user"></i>
-									<h4>Basic</h4>
-								</div>
-								<div class="body-price">
-									<div class="price-plan">
-										<span class="currency">$</span>
-										<span class="number">25</span>
-										<span class="period">month</span>
-									</div>
-									<div class="list-price">
-										<ul>
-											<li>Web Design</li>
-											<li>Web Development</li>
-											<li class="disable">Responsive Design</li>
-											<li class="disable">Game Development</li>
-										</ul>
-									</div>
-								</div>
-								<div class="footer-price">
-									<a href="#" class="btn-st">Buy Now</a>
-								</div>
-							</div>
-						</div>
-
-						<!-- Price Item -->
-						<div class="col-lg-4 col-sm-12">
-							<div class="price box">
-								<div class="head-price">
-									<i class="fa fa-briefcase"></i>
-									<h4>Standard</h4>
-								</div>
-								<div class="body-price">
-									<div class="price-plan">
-										<span class="currency">$</span>
-										<span class="number">40</span>
-										<span class="period">month</span>
-									</div>
-									<div class="list-price">
-										<ul>
-											<li>Web Design</li>
-											<li>Web Development</li>
-											<li>Responsive Design</li>
-											<li class="disable">Game Development</li>
-										</ul>
-									</div>
-								</div>
-								<div class="footer-price">
-									<a href="#" class="btn-st">Buy Now</a>
-								</div>
-							</div>
-						</div>
-
-						<!-- Price Item -->
-						<div class="col-lg-4 col-sm-12">
-							<div class="price box">
-								<div class="head-price">
-									<i class="fa fa-globe"></i>
-									<h4>Premium</h4>
-								</div>
-								<div class="body-price">
-									<div class="price-plan">
-										<span class="currency">$</span>
-										<span class="number">55</span>
-										<span class="period">month</span>
-									</div>
-									<div class="list-price">
-										<ul>
-											<li>Web Design</li>
-											<li>Web Development</li>
-											<li>Responsive Design</li>
-											<li>Game Development</li>
-										</ul>
-									</div>
-								</div>
-								<div class="footer-price">
-									<a href="#" class="btn-st">Buy Now</a>
-								</div>
-							</div>
-						</div>
-					</div>
-			  	</section>
-         	</div>
-			 
-			<!-- Resume Section -->
-          	<div class="page pt-resume" data-simplebar>
-            	<section class="container">
-					
-					<!-- Section Title -->
-					<div class="header-page mt-70 mob-mt">
-						<h2>Resume</h2>
-    					<span></span>
-					</div>
-					
-					<!-- Experience & Education Row Start -->
-					<div class="row mt-100">
-					
-						<!-- Experience Column Start -->
-						<div class="col-lg-6 col-sm-12">
-						
-							<!-- Header Block -->
-							<div class="header-box mb-50">
-								<h3>Experience</h3>
-							</div>
-						
-							<div class="experience box">
-								
-								<!-- Experience Item -->
-								<div class="item">
-									<div class="main">
-										<h4>Web Design</h4>
-										<p><i class="far fa-calendar-alt"></i>2012 - 2014 | Сompany Inc</p>
-									</div>
-									<p>Work experience is essential for getting a job. Whether it's a short work placement or a longer internship, work experience is always viewed favourably by employers and can help you decide your future career.</p>
-								</div>
-
-								<!-- Experience Item -->
-								<div class="item">
-									<div class="main">
-										<h4>Fornt-End Developer</h4>
-										<p><i class="far fa-calendar-alt"></i>2014 - 2015 | Сompany Inc</p>
-									</div>
-									<p>Work experience is essential for getting a job. Whether it's a short work placement or a longer internship, work experience is always viewed favourably by employers and can help you decide your future career.</p>
-								</div>
-
-								<!-- Experience Item -->
-								<div class="item">
-									<div class="main">
-										<h4>Web Development</h4>
-										<p><i class="far fa-calendar-alt"></i>2015 - 2019 | Сompany Inc</p>
-									</div>
-									<p>Work experience is essential for getting a job. Whether it's a short work placement or a longer internship, work experience is always viewed favourably by employers and can help you decide your future career.</p>
-								</div>
-							</div>
-						</div>
-							
-						<!-- Education Column Start -->
-						<div class="col-lg-6 col-sm-12">
-						
-							<!-- Header Block -->
-							<div class="header-box mb-50 mob-box-mt">
-								<h3>Educacion</h3>
-							</div>
-						
-							<div class="experience box">
-
-								<!-- Education Item -->
-								<div class="item">
-									<div class="main">
-										<h4>Universitario</h4>
-										<p><i class="far fa-calendar-alt"></i>2011 - 2013 | Computer Science</p>
-									</div>
-									<p>Work experience is essential for getting a job. Whether it's a short work placement or a longer internship, work experience is always viewed favourably by employers and can help you decide your future career.</p>
-								</div>
-
-								<!-- Education Item -->
-								<div class="item">
-									<div class="main">
-										<h4>Post Graduation</h4>
-										<p><i class="far fa-calendar-alt"></i>2013 - 2016 | Computer Science</p>
-									</div>
-									<p>Work experience is essential for getting a job. Whether it's a short work placement or a longer internship, work experience is always viewed favourably by employers and can help you decide your future career.</p>
-								</div>
-
-								<!-- Education Item -->
-								<div class="item">
-									<div class="main">
-										<h4>Gradution</h4>
-										<p><i class="far fa-calendar-alt"></i>2012 - 2015 | Computer Science</p>
-									</div>
-									<p>Work experience is essential for getting a job. Whether it's a short work placement or a longer internship, work experience is always viewed favourably by employers and can help you decide your future career.</p>
-								</div>
-							</div>
-						</div>
-					</div>
-				
-					<!-- Skills Row Start -->
-					<div class="row mt-100">
-					
-						<!-- Header Block -->
-						<div class="col-md-12">
-							<div class="header-box mb-50">
-								<h3>Skills</h3>
-							</div>
-						</div>
-					</div>
-					
-					<div class="box skills">
-						<div class="row">
-							<div class="col-lg-6 col-sm-6">
-
-								<!-- Skill Item -->
-								<div class="skill-item">
-									<h4 class="progress-title">HTML5</h4>
-									<div class="progress">
-										<div class="progress-bar" style="width:98%">
-											<div class="progress-value">98%</div>
-										</div>
-									</div>
-								</div>
-
-								<!-- Skill Item -->
-								<div class="skill-item">
-									<h4 class="progress-title">CSS3</h4>
-									<div class="progress">
-										<div class="progress-bar" style="width:85%">
-											<div class="progress-value">85%</div>
-										</div>
-									</div>
-								</div>
-
-								<!-- Skill Item -->
-								<div class="skill-item">
-									<h4 class="progress-title">JavaScript</h4>
-									<div class="progress">
-										<div class="progress-bar" style="width:90%">
-											<div class="progress-value">90%</div>
-										</div>
-									</div>
-								</div>
-							
-								<!-- Skill Item -->
-								<div class="skill-item">
-									<h4 class="progress-title">UI/UX designer</h4>
-									<div class="progress">
-										<div class="progress-bar" style="width:77%">
-											<div class="progress-value">77%</div>
-										</div>
-									</div>
-								</div>
-							</div>
-
-							<div class="col-lg-6 col-sm-6">
-								<div class="row">
-									
-									<!-- Skill Item -->
-									<div class="col-lg-6 col-sm-6">
-										<div class="chart" data-percent="80" data-bar-color="#fff"> 80% <p>PHP</p></div>
-									</div>
-									
-									<!-- Skill Item -->
-									<div class="col-lg-6 col-sm-6">
-										<div class="chart" data-percent="70" data-bar-color="#fff"> 70% <p>Illustrator</p></div>
-									</div>
-									
-									<!-- Skill Item -->
-									<div class="col-lg-6 col-sm-6">
-										<div class="chart" data-percent="60" data-bar-color="#fff"> 60% <p>Photoshop</p></div>
-									</div>
-									
-									<!-- Skill Item -->
-									<div class="col-lg-6 col-sm-6">
-										<div class="chart" data-percent="90" data-bar-color="#fff"> 90% <p>AngularJS</p></div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				
-					<!-- Work Process Row Start -->
-					<div class="row mt-100">
-					
-						<!-- Header Block -->
-						<div class="col-md-12">
-							<div class="header-box mb-50">
-								<h3>My Working Process</h3>
-							</div>
-						</div>
-					</div>
-					
-					<div class="box work-process mb-100">
-						<div class="row">
-							<div class="col-lg-4 col-sm-12 ltr">
-							
-                    			<!-- Working Process Item-->
-                          	 	<div class="single-wp width-sm process-1">
-									<p class="wp-step">01</p>
-									<h4 class="wp-title">Discuss idea</h4>
-									<p>I could describe these conceptions, also impress upon paper all that is living.</p>
-								</div>
-
-								<!-- Working Process Item-->
-								<div class="single-wp width-sm process-2">
-									<p class="wp-step">02</p>
-									<h4 class="wp-title">Creative concept</h4>
-									<p>I could describe these conceptions, also impress upon paper all that is living.</p>
-								</div>
-							</div>
-					
-							<div class="col-lg-4 hidden-sm">
-							
-								<!-- Working Process Circle-->
-								<div class="wp-circle">
-									<h4>Working Process</h4>
-									<span class="dots top-l"></span>
-									<span class="dots bottom-l"></span>
-									<span class="dots top-r"></span>
-									<span class="dots bottom-r"></span>
-								</div>
-							</div>
-					
-							<div class="col-lg-4 col-sm-12 rtl">
-						
-								<!-- Working Process Item-->
-								<div class="single-wp width-sm process-3">
-									<p class="wp-step">03</p>
-									<h4 class="wp-title">Web concept</h4>
-									<p>I could describe these conceptions, also impress upon paper all that is living.</p>
-								</div>
-	
-								<!-- Working Process Item-->
-								<div class="single-wp width-sm process-4">
-									<p class="wp-step">04</p>
-									<h4 class="wp-title">Final concept</h4>
-									<p>I could describe these conceptions, also impress upon paper all that is living.</p>
-								</div>
-							</div>
-						</div>
-					</div>
-			  	</section>
-         	</div>
-			 
-			<!-- Portfolio Section -->
-          	<div class="page pt-portfolio" data-simplebar>
-            	<section class="container">
-					
-					<!-- Section Title -->
-					<div class="header-page mt-70 mob-mt">
-						<h2>Portfolio</h2>
-    					<span></span>
-					</div>
-					
-					<!-- Portfolio Filter Row Start -->
-					<div class="row mt-100">
-						<div class="col-lg-12 col-sm-12 portfolio-filter">
-							<ul>
-								<li class="active" data-filter="*">All</li>
-								<li data-filter=".brand">Brand</li>
-								<li data-filter=".design">Design</li>
-								<li data-filter=".graphic">Graphic</li>
-							</ul>
-						</div>
-					</div>
-					
-					<!-- Portfolio Item Row Start -->
-					<div class="row portfolio-items mt-100 mb-100">
-					
-						<!-- Portfolio Item -->
-						<div class="item col-lg-4 col-sm-6 graphic">
-							<figure>
-								<img alt="" src="img/portfolio/img-1.jpg">
-								<figcaption>
-									<h3>Project Name</h3>
-									<p>Graphic</p><i class="fas fa-image"></i>
-									<a class="image-link" href="img/portfolio/img-1.jpg"></a>
-								</figcaption>
-							</figure>
-						</div>
-					
-						<!-- Portfolio Item -->
-						<div class="item col-lg-4 col-sm-6 design">
-							<figure>
-								<img alt="" src="img/portfolio/img-2.jpg">
-									<figcaption>
-									<h3>Project Name</h3>
-									<p>Design</p><i class="fas fa-image"></i>
-									<a class="image-link" href="img/portfolio/img-2.jpg"></a>
-								</figcaption>
-							</figure>
-						</div>
-					
-						<!-- Portfolio Item -->
-						<div class="item col-lg-4 col-sm-6 brand">
-							<figure>
-								<img alt="" src="img/portfolio/img-3.jpg">
-								<figcaption>
-									<h3>Project Name</h3>
-									<p>Graphic</p><i class="fas fa-video"></i>
-									<a class="video-link" href="https://www.youtube.com/watch?v=k_okcNVZqqI"></a>
-								</figcaption>
-							</figure>
-						</div>
-					
-						<!-- Portfolio Item -->
-						<div class="item col-lg-4 col-sm-6 graphic">
-							<figure>
-								<img alt="" src="img/portfolio/img-4.jpg">
-								<figcaption>
-									<h3>Project Name</h3>
-									<p>Design</p><i class="fas fa-image"></i>
-									<a class="image-link" href="img/portfolio/img-4.jpg"></a>
-								</figcaption>
-							</figure>
-						</div>
-					
-						<!-- Portfolio Item -->
-						<div class="item col-lg-4 col-sm-6 design">
-							<figure>
-								<img alt="" src="img/portfolio/img-5.jpg">
-								<figcaption>
-									<h3>Project Name</h3>
-									<p>Design</p><i class="fas fa-video"></i>
-									<a class="video-link" href="https://www.youtube.com/watch?v=k_okcNVZqqI"></a>
-								</figcaption>
-							</figure>
-						</div>
-					
-						<!-- Portfolio Item -->
-						<div class="item col-lg-4 col-sm-6 brand">
-							<figure>
-								<img alt="" src="img/portfolio/img-6.jpg">
-								<figcaption>
-									<h3>Project Name</h3>
-									<p>Brand</p><i class="fas fa-image"></i>
-									<a class="image-link" href="img/portfolio/img-6.jpg"></a>
-								</figcaption>
-							</figure>
-						</div>
-					
-						<!-- Portfolio Item -->
-						<div class="item col-lg-4 col-sm-6 graphic">
-							<figure>
-								<img alt="" src="img/portfolio/img-7.jpg">
-								<figcaption>
-									<h3>Project Name</h3>
-									<p>Brand</p><i class="fas fa-image"></i>
-									<a class="image-link" href="img/portfolio/img-7.jpg"></a>
-								</figcaption>
-							</figure>
-						</div>
-					
-						<!-- Portfolio Item -->
-						<div class="item col-lg-4 col-sm-6 design">
-							<figure>
-								<img alt="" src="img/portfolio/img-8.jpg">
-								<figcaption>
-									<h3>Project Name</h3>
-									<p>Brand</p><i class="fas fa-image"></i>
-									<a class="image-link" href="img/portfolio/img-8.jpg"></a>
-								</figcaption>
-							</figure>
-						</div>
-					
-						<!-- Portfolio Item -->
-						<div class="item col-lg-4 col-sm-6 brand">
-							<figure>
-								<img alt="" src="img/portfolio/img-9.jpg">
-								<figcaption>
-									<h3>Project Name</h3>
-									<p>Graphic</p><i class="fas fa-image"></i>
-									<a class="image-link" href="img/portfolio/img-9.jpg"></a>
-								</figcaption>
-							</figure>
-						</div>
-					</div>
-				</section>
-       	   	</div>
-			 <!-- Blog Section -->
-          	<div class="page pt-blog" data-simplebar>
-            	<section class="container">
-					
-					<!-- Section Title -->
-             		<div class="header-page mt-70 mob-mt">
-						<h2>Blog</h2>
-    					<span></span>
-					</div>
-					
-					<!-- Blog Row Start -->
-					<div class="row blog-masonry mt-100 mb-50">
-						
-						<!-- Blog Item -->
-						<div class="col-lg-4 col-sm-6">
-							<div class="blog-item">
-								<div class="thumbnail">
-									<a href="single-blog.html"><img alt="" src="img/blog/img-1.jpg"></a>
-								</div>
-								<h4><a href="single-blog.html">Road to success</a></h4>
-								<ul>
-                            		<li><a href="#">15 April 2019</a></li>
-                            		<li><a href="#">Lifestyle</a></li>
-                           		</ul>
-								<div class="blog-btn">
-									<a href="single-blog.html" class="btn-st">Read More</a>
-								</div>
-							</div>
-						</div>
-
-						<!-- Blog Item -->
-						<div class="col-lg-4 col-sm-6">
-							<div class="blog-item">
-								<div class="thumbnail">
-									<a href="single-blog.html"><img alt="" src="img/blog/img-2.jpg"></a>
-									<a href="https://www.youtube.com/watch?v=k_okcNVZqqI" class="btn-play"></a>
-								</div>
-								<h4><a href="single-blog.html">Road to success</a></h4>
-								<ul>
-                            		<li><a href="#">10 March 2019</a></li>
-                            		<li><a href="#">Lifestyle</a></li>
-                           		</ul>
-								<div class="blog-btn">
-									<a href="single-blog.html" class="btn-st">Read More</a>
-								</div>
-							</div>
-						</div>
-
-						<!-- Blog Item -->
-						<div class="col-lg-4 col-sm-6">
-							<div class="blog-item">
-								<div class="thumbnail">
-									<a href="single-blog.html"><img alt="" src="img/blog/img-3.jpg"></a>
-								</div>
-								<h4><a href="single-blog.html">Road to success</a></h4>
-								<ul>
-                            		<li><a href="#">02 March 2019</a></li>
-                            		<li><a href="#">Work</a></li>
-                            	</ul>
-								<p>Tower Hamlets or mass or members of propaganda bananas real estate. However, a large and a mourning, vel euismod.</p>
-								<div class="blog-btn">
-									<a href="single-blog.html" class="btn-st">Read More</a>
-								</div>
-							</div>
-						</div>
-
-						<!-- Blog Item -->
-						<div class="col-lg-4 col-sm-6">
-							<div class="blog-item">
-								<div class="thumbnail">
-									<a href="single-blog.html"><img alt="" src="img/blog/img-4.jpg"></a>
-								</div>
-								<h4><a href="single-blog.html">Road to success</a></h4>
-								<ul>
-                            		<li><a href="#">29 March 2019</a></li>
-                            		<li><a href="#">Career</a></li>
-                            	</ul>
-								<div class="blog-btn">
-									<a href="single-blog.html" class="btn-st">Read More</a>
-								</div>
-							</div>
-						</div>
-
-						<!-- Blog Item -->
-						<div class="col-lg-4 col-sm-6">
-							<div class="blog-item">
-								<div class="thumbnail">
-									<a href="single-blog.html"><img alt="" src="img/blog/img-5.jpg"></a>
-								</div>
-								<h4><a href="single-blog.html">Road to success</a></h4>
-								<ul>
-									<li><a href="#">14 April 2019</a></li>
-                            		<li><a href="#">Lifestyle</a></li>
-                            	</ul>
-								<p>Tower Hamlets or mass or members of propaganda bananas real estate. However, a large and a mourning, vel euismod.</p>
-								<div class="blog-btn">
-									<a href="single-blog.html" class="btn-st">Read More</a>
-								</div>
-							</div>
-						</div>
-
-						<!-- Blog Item -->
-						<div class="col-lg-4 col-sm-6">
-							<div class="blog-item">
-								<div class="thumbnail">
-									<a href="single-blog.html"><img alt="" src="img/blog/img-6.jpg"></a>
-									<a href="https://www.youtube.com/watch?v=k_okcNVZqqI" class="btn-play"></a>
-								</div>
-								<h4><a href="single-blog.html">Road to success</a></h4>
-								<ul>
-                           		 	<li><a href="#">29 April 2019</a></li>
-                           		 	<li><a href="#">Career</a></li>
-                        	    </ul>
-								<div class="blog-btn">
-									<a href="single-blog.html" class="btn-st">Read More</a>
-								</div>
-							</div>
-						</div>
-					</div>
-            	</section>
-			</div>
-			 
-			<!-- Contact Section -->
-         	<div class="page pt-contact" data-simplebar>
-            	<section class="container">
-					
-					<!-- Section Title -->
-              		<div class="header-page mt-70 mob-mt">
-						<h2>Contact</h2>
-    					<span></span>
-					</div>
-					
-					<!-- Form Start -->
-					<div class="row mt-100">
-						<div class="col-lg-12 col-sm-12">
-							<div class="contact-form ">
-                        		<form method="post" class="box contact-valid" id="contact-form">
-									<div class="row">
-                            			<div class="col-lg-6 col-sm-12">
-                                			<input type="text" name="name" id="name" class="form-control" placeholder="Name *">
-                            			</div>
-                            			<div class="col-lg-6 col-sm-12">
-                                			<input type="email" name="email" id="email" class="form-control" placeholder="Email *">
-                            			</div>
-                            			<div class="col-lg-12 col-sm-12">
-                                			<textarea class="form-control" name="note"  id="note" placeholder="Your Message"></textarea>
-                            			</div>
-                             			<div class="col-lg-12 col-sm-12 text-center">
-                                			<button type="submit" class="btn-st">Send Message</button>
-                                			<div id="loader">
-                                    			<i class="fas fa-sync"></i>
-                                			</div>
-                            			</div>
-										<div class="col-lg-12 col-sm-12">
-                            				<div class="error-messages">
-                                				<div id="success">
-													<i class="far fa-check-circle"></i>Thank you, your message has been sent.
-												</div>
-                                				<div id="error">
-													<i class="far fa-times-circle"></i>Error occurred while sending email. Please try again later.
-												</div>
-											</div>
-                            			</div>
-									</div>
-                    			</form>
-                    		</div>
-						</div>
-					</div>
-					
-					<!-- Contact Info -->
-					<div class="box contact-info">
-						<div class="row">
-							<div class="col-lg-4 col-sm-12 info">
-								<i class="fas fa-paper-plane"></i>
-         						<p>jesus.israel.lima.canaza@gmail.com</p>
-          						<span>Email</span>
-							</div>
-							<div class="col-lg-4 col-sm-12 info">
-								<i class="fas fa-map-marker-alt"></i>
-         						<p>Bolivia-Chuquisaca-Nor Cinti-Villa Charcas</p>
-          						<span>Addres</span>
-							</div>	
-							<div class="col-lg-4 col-sm-12 info">
-								<i class="fas fa-phone"></i>
-         						<p>(+591)74454144/74450946</p>
-          						<span>Phone</span>
-							</div>	
-						</div>
-					</div>
-					
-					<!--Google Map Start-->
-					<div class="google-map box mt-100 mb-100">
-						<div class="row">
-							<div class="col-lg-12">
-								<div id="map" data-latitude="40.712775" data-longitude="-74.005973" data-zoom="14"></div>
-							</div>
-						</div>
-					</div>
-            	</section>
-          	</div> 
-			
+    <section id="sobre-mi">
+      <div class="container">
+        <div class="section-head">
+          <h2>Sobre mí</h2>
+          <p>Actualicé esta sección para mostrar una imagen más profesional, actual y alineada con tu marca personal.</p>
         </div>
-      	</div>
-    	</div>
-  		</div>
-		</div>
-		</div>
-		
-		<!-- All Script -->
-		<script src="js/jquery.min.js"></script>
-		<script src="js/isotope.pkgd.min.js"></script>
-		<script src="js/bootstrap.min.js"></script>
-		<script src="js/simplebar.js"></script>
-		<script src="js/owl.carousel.min.js"></script>
-		<script src="js/jquery.magnific-popup.min.js"></script>
-		<script src="js/jquery.animatedheadline.min.js"></script>
-		<script src="js/jquery.easypiechart.js"></script>
-		<script src="js/jquery.validation.js"></script>
-		<script src="js/tilt.js"></script>
-        <script src="js/main.js"></script>
-		<script src="js/main-demo.js"></script>
-        <script src="#"></script>
-		
-    </body>
+        <div class="grid-2">
+          <article class="card">
+            <i class="fas fa-user-astronaut"></i>
+            <h3>Perfil profesional</h3>
+            <p>Combino tecnología, contabilidad y construcción para analizar problemas desde varias áreas y transformarlos en sistemas simples, útiles y escalables.</p>
+            <div class="tag-list">
+              <span class="tag">Ingeniería de Sistemas</span>
+              <span class="tag">Construcción Civil</span>
+              <span class="tag">Contaduría General</span>
+            </div>
+          </article>
+          <article class="card">
+            <i class="fas fa-location-arrow"></i>
+            <h3>Enfoque actual</h3>
+            <p>Estoy construyendo proyectos digitales como sistemas de inventario, POS, barbería, gimnasio y páginas personales, usando una visión práctica para negocios reales.</p>
+            <div class="tag-list">
+              <span class="tag">React</span>
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+              <span class="tag">JavaScript</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
 
+    <section id="servicios">
+      <div class="container">
+        <div class="section-head">
+          <h2>Servicios</h2>
+          <p>Una presentación más clara de lo que puedes ofrecer o mostrar como marca personal.</p>
+        </div>
+        <div class="grid-3">
+          <article class="card">
+            <i class="fas fa-laptop-code"></i>
+            <h3>Desarrollo web</h3>
+            <p>Páginas modernas, responsivas y enfocadas en comunicar una marca o negocio de forma profesional.</p>
+          </article>
+          <article class="card">
+            <i class="fas fa-cash-register"></i>
+            <h3>Sistemas de negocio</h3>
+            <p>Prototipos para inventario, ventas, caja, clientes, proveedores, agenda y control administrativo.</p>
+          </article>
+          <article class="card">
+            <i class="fas fa-palette"></i>
+            <h3>Identidad digital</h3>
+            <p>Diseño visual para logos, banners, perfiles, portafolios y presencia digital con estilo propio.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="proyectos">
+      <div class="container">
+        <div class="section-head">
+          <h2>Proyectos destacados</h2>
+          <p>Reemplacé el portafolio genérico por proyectos que sí representan tu camino actual.</p>
+        </div>
+        <div class="grid-3">
+          <article class="card project">
+            <div>
+              <div class="project-top"><div class="project-number">01</div><span class="tag">Inventario</span></div>
+              <h3>Sistema para tienda de ropa</h3>
+              <p>Control de productos, variantes, tallas, colores, stock, movimientos y alertas de inventario.</p>
+            </div>
+          </article>
+          <article class="card project">
+            <div>
+              <div class="project-top"><div class="project-number">02</div><span class="tag">POS</span></div>
+              <h3>Sistema multi negocio</h3>
+              <p>Gestión para botillería, barbería y minimarket con caja, productos, clientes, proveedores y reportes.</p>
+            </div>
+          </article>
+          <article class="card project">
+            <div>
+              <div class="project-top"><div class="project-number">03</div><span class="tag">Marca</span></div>
+              <h3>LCJesusI / LCJI</h3>
+              <p>Marca personal basada en código, estructura y precisión, con enfoque tecnológico y profesional.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="formacion">
+      <div class="container">
+        <div class="section-head">
+          <h2>Formación y habilidades</h2>
+          <p>Una sección limpia para mostrar tu perfil multidisciplinario sin textos de plantilla.</p>
+        </div>
+        <div class="timeline">
+          <article class="timeline-item">
+            <strong>Actualidad</strong>
+            <div>
+              <h3>Ingeniería de Sistemas</h3>
+              <p>Desarrollo de aplicaciones, lógica de sistemas, bases de datos y soluciones digitales.</p>
+            </div>
+          </article>
+          <article class="timeline-item">
+            <strong>Actualidad</strong>
+            <div>
+              <h3>Construcción Civil</h3>
+              <p>Conocimientos en procesos constructivos, materiales, control de obra, guías técnicas y acabados.</p>
+            </div>
+          </article>
+          <article class="timeline-item">
+            <strong>Base técnica</strong>
+            <div>
+              <h3>Contaduría General</h3>
+              <p>Visión administrativa, costos, control, inventario y organización financiera para negocios.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contacto">
+      <div class="container contact-card">
+        <div class="contact-panel">
+          <h2>Construyamos algo profesional.</h2>
+          <p>Este sitio ahora queda más enfocado en tu identidad LCJesusI, tus estudios y tus proyectos reales. Puedes usarlo como portafolio personal y carta de presentación.</p>
+          <div class="socials">
+            <a href="https://www.facebook.com/LCJesusI/" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://twitter.com/LCJesusI" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/jesus_israel_lima_canaza/" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.youtube.com/channel/UC-BhTLr0fHaMwrSYODL6h_Q" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            <a href="https://github.com/jesus-israel-lima-canaza" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          </div>
+        </div>
+        <div class="contact-list">
+          <article class="card contact-item">
+            <small>Email</small>
+            <strong><a href="mailto:jesus.israel.lima.canaza@gmail.com">jesus.israel.lima.canaza@gmail.com</a></strong>
+          </article>
+          <article class="card contact-item">
+            <small>Ubicación</small>
+            <strong>Calama, Región de Antofagasta, Chile</strong>
+          </article>
+          <article class="card contact-item">
+            <small>Marca</small>
+            <strong>LCJesusI · LCJI</strong>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      © 2026 Jesús Israel Lima Canaza · LCJesusI. Código, estructura y precisión.
+    </div>
+  </footer>
+</body>
 </html>
