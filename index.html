@@ -297,7 +297,7 @@
     }
 
     .project {
-      min-height: 250px;
+      min-height: 280px;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
@@ -322,6 +322,18 @@
       color: var(--primary);
       font-weight: 900;
     }
+
+    .project-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      margin-top: 20px;
+      color: var(--primary);
+      font-weight: 900;
+      font-size: 14px;
+    }
+
+    .project-link:hover { color: var(--secondary); }
 
     .timeline {
       display: grid;
@@ -453,7 +465,7 @@
       <div class="container">
         <div class="section-head">
           <h2>Sobre mí</h2>
-          <p>Actualicé esta sección para mostrar una imagen más profesional, actual y alineada con tu marca personal.</p>
+          <p>Perfil profesional orientado a crear soluciones digitales útiles, con base en tecnología, administración y construcción.</p>
         </div>
         <div class="grid-2">
           <article class="card">
@@ -485,7 +497,7 @@
       <div class="container">
         <div class="section-head">
           <h2>Servicios</h2>
-          <p>Una presentación más clara de lo que puedes ofrecer o mostrar como marca personal.</p>
+          <p>Una presentación clara de lo que puedo ofrecer y mostrar como marca personal.</p>
         </div>
         <div class="grid-3">
           <article class="card">
@@ -510,30 +522,75 @@
     <section id="proyectos">
       <div class="container">
         <div class="section-head">
-          <h2>Proyectos destacados</h2>
-          <p>Reemplacé el portafolio genérico por proyectos que sí representan tu camino actual.</p>
+          <h2>Proyectos en GitHub</h2>
+          <p>Selección de repositorios que representan mi avance en desarrollo web, sistemas administrativos, negocios digitales y marca personal.</p>
         </div>
         <div class="grid-3">
           <article class="card project">
             <div>
-              <div class="project-top"><div class="project-number">01</div><span class="tag">Inventario</span></div>
-              <h3>Sistema para tienda de ropa</h3>
-              <p>Control de productos, variantes, tallas, colores, stock, movimientos y alertas de inventario.</p>
+              <div class="project-top"><div class="project-number">01</div><span class="tag">Portafolio</span></div>
+              <h3>webjesus</h3>
+              <p>Sitio web personal de LCJesusI para presentar mi perfil, formación, servicios, proyectos y medios de contacto.</p>
+              <div class="tag-list">
+                <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span>
+              </div>
             </div>
+            <a class="project-link" href="https://github.com/jesus-israel-lima-canaza/webjesus" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> Ver repositorio</a>
           </article>
           <article class="card project">
             <div>
-              <div class="project-top"><div class="project-number">02</div><span class="tag">POS</span></div>
-              <h3>Sistema multi negocio</h3>
-              <p>Gestión para botillería, barbería y minimarket con caja, productos, clientes, proveedores y reportes.</p>
+              <div class="project-top"><div class="project-number">02</div><span class="tag">Fitness</span></div>
+              <h3>Sistema-Gym</h3>
+              <p>Proyecto para administrar un gimnasio con enfoque en clientes, membresías, pagos, control y organización operativa.</p>
+              <div class="tag-list">
+                <span class="tag">Sistema</span><span class="tag">Gestión</span><span class="tag">App</span>
+              </div>
             </div>
+            <a class="project-link" href="https://github.com/jesus-israel-lima-canaza/Sistema-Gym" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> Ver repositorio</a>
           </article>
           <article class="card project">
             <div>
-              <div class="project-top"><div class="project-number">03</div><span class="tag">Marca</span></div>
-              <h3>LCJesusI / LCJI</h3>
-              <p>Marca personal basada en código, estructura y precisión, con enfoque tecnológico y profesional.</p>
+              <div class="project-top"><div class="project-number">03</div><span class="tag">Inventario</span></div>
+              <h3>BodegaSmart</h3>
+              <p>Sistema orientado al control de bodega e inventario para registrar productos, stock y movimientos de forma ordenada.</p>
+              <div class="tag-list">
+                <span class="tag">Bodega</span><span class="tag">Stock</span><span class="tag">Control</span>
+              </div>
             </div>
+            <a class="project-link" href="https://github.com/jesus-israel-lima-canaza/BodegaSmart" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> Ver repositorio</a>
+          </article>
+          <article class="card project">
+            <div>
+              <div class="project-top"><div class="project-number">04</div><span class="tag">Barbería</span></div>
+              <h3>stylerock</h3>
+              <p>Proyecto enfocado en una barbería con estilo propio, pensado para agenda, servicios, clientes y presencia digital.</p>
+              <div class="tag-list">
+                <span class="tag">Barbería</span><span class="tag">Agenda</span><span class="tag">Servicios</span>
+              </div>
+            </div>
+            <a class="project-link" href="https://github.com/jesus-israel-lima-canaza/stylerock" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> Ver repositorio</a>
+          </article>
+          <article class="card project">
+            <div>
+              <div class="project-top"><div class="project-number">05</div><span class="tag">Cálculo</span></div>
+              <h3>Calc-Pro-V2</h3>
+              <p>Calculadora profesional en evolución, pensada para operaciones rápidas, ordenadas y útiles en contextos prácticos.</p>
+              <div class="tag-list">
+                <span class="tag">Calculadora</span><span class="tag">Productividad</span><span class="tag">V2</span>
+              </div>
+            </div>
+            <a class="project-link" href="https://github.com/jesus-israel-lima-canaza/Calc-Pro-V2" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> Ver repositorio</a>
+          </article>
+          <article class="card project">
+            <div>
+              <div class="project-top"><div class="project-number">06</div><span class="tag">Negocio</span></div>
+              <h3>sistema-contable</h3>
+              <p>Sistema administrativo privado para control de negocio, ventas, inventario, caja y organización contable.</p>
+              <div class="tag-list">
+                <span class="tag">Contabilidad</span><span class="tag">POS</span><span class="tag">Privado</span>
+              </div>
+            </div>
+            <a class="project-link" href="https://github.com/jesus-israel-lima-canaza/sistema-contable" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> Repositorio privado</a>
           </article>
         </div>
       </div>
@@ -575,7 +632,7 @@
       <div class="container contact-card">
         <div class="contact-panel">
           <h2>Construyamos algo profesional.</h2>
-          <p>Este sitio ahora queda más enfocado en tu identidad LCJesusI, tus estudios y tus proyectos reales. Puedes usarlo como portafolio personal y carta de presentación.</p>
+          <p>Este sitio está enfocado en mi identidad LCJesusI, mis estudios y mis proyectos reales. Funciona como portafolio personal y carta de presentación.</p>
           <div class="socials">
             <a href="https://www.facebook.com/LCJesusI/" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
             <a href="https://twitter.com/LCJesusI" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
